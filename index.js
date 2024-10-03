@@ -7,7 +7,7 @@ import mongoose from "mongoose";
 
 dotenv.config();
 const app = express();
-const PORT = Number(process.env.PORT);
+const port = process.env.PORT || 10000;
 
 app.use(express.json());
 app.use("/", AppRouter);
